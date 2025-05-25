@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>РСД - Новости</title>
+	<meta property="og:title" content="РСД - Новости">
+	<meta property="og:description" content="Описание">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="РСД - Новости">
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<meta name="apple-mobile-web-app-title" content="РСД">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header header--inner" id="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<a href="index.html" class="header__logotype">
+						<img src="img/logotype.svg" width="120" height="49" alt="Россия - спортивная держава">
+					</a>
+					<div class="header__info">
+						<div class="header__inner">
+							<nav class="nav header__nav">
+								<ul class="nav__list">
+									<li class="nav__item">
+										<a href="news.html" class="nav__link">Новости</a>
+									</li>
+									<li class="nav__item">
+										<a href="programs.html" class="nav__link">Программа</a>
+									</li>
+									<li class="nav__item">
+										<a href="partners.html" class="nav__link">Партнеры</a>
+									</li>
+								</ul>
+							</nav>
+							<button class="hamburger" id="hamburger-toggle">
+								<div class="hamburger__group">
+									<span class="hamburger__inner"></span>
+									<span class="hamburger__inner"></span>
+									<span class="hamburger__inner"></span>
+								</div>
+								<span class="hamburger__title">Меню</span>
+							</button>
+							<div class="c-socnav header__socnav">
+								<ul class="c-socnav__list">
+									<li class="c-socnav__item">
+										<a href="#" class="c-socnav__link">
+											<svg class="c-socnav__icon">
+												<use xlink:href="img/sprite.svg#icon-square-tg"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="c-socnav__item">
+										<a href="#" class="c-socnav__link">
+											<svg class="c-socnav__icon">
+												<use xlink:href="img/sprite.svg#icon-square-vk"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- end of header -->
+		<!-- content -->
+		<div class="wrapper__content">
+			<!-- news -->
+			<section class="news" id="news">
+				<div class="container">
+					<nav class="breadcrumbs" aria-label="Breadcrumb">
+						<ol class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="index.html" class="breadcrumbs__link">Главная</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<span class="breadcrumbs__link">Новости</span>
+							</li>
+						</ol>
+					</nav>
+					<div class="section-heading">
+						<h2 class="section-heading__title">Новости</h2>
+					</div>
+					<div class="news__wrap">
+						<div class="news__left">
+							<div class="news-filter news__filter">
+								<div class="news-filter__wrap">
+									<button class="news-filter__trigger">
+										<span>Фильтр</span>
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-filter"></use>
+										</svg>
+									</button>
+									<div class="news-filter__dropdown">
+										<div class="news-filter__selects">
+											<div class="select-box news-filter__select">
+												<div class="select-box__selected">
+													<span class="select-box__placeholder is--active">Год</span>
+													<span class="select-box__values"></span>
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-caret"></use>
+													</svg>
+												</div>
+												<div class="select-box__container">
+													<div class="select-box__scroll" data-simplebar>
+														<div class="select-box__wrap">
+															<div class="select-box__option">
+																<input type="checkbox" class="select-box__radio" id="sort-years-01" name="sort-years">
+																<label for="sort-years-01" class="select-box__label">
+																	<span class="select-box__title">2025</span>
+																	<span class="select-box__icon"></span>
+																</label>
+															</div>
+															<div class="select-box__option">
+																<input type="checkbox" class="select-box__radio" id="sort-years-02" name="sort-years">
+																<label for="sort-years-02" class="select-box__label">
+																	<span class="select-box__title">2024</span>
+																	<span class="select-box__icon"></span>
+																</label>
+															</div>
+															<div class="select-box__option">
+																<input type="checkbox" class="select-box__radio" id="sort-years-03" name="sort-years">
+																<label for="sort-years-03" class="select-box__label">
+																	<span class="select-box__title">2023</span>
+																	<span class="select-box__icon"></span>
+																</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="select-box select-box--single news-filter__select">
+												<div class="select-box__selected">
+													<span class="select-box__placeholder is--active">Месяц</span>
+													<span class="select-box__values"></span>
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-caret"></use>
+													</svg>
+												</div>
+												<div class="select-box__container">
+													<div class="select-box__scroll" data-simplebar>
+														<div class="select-box__wrap">
+															<div class="select-box__option">
+																<input type="checkbox" class="select-box__radio" id="sort-months-01" name="sort-months">
+																<label for="sort-months-01" class="select-box__label">
+																	<span class="select-box__title">Январь</span>
+																	<span class="select-box__icon"></span>
+																</label>
+															</div>
+															<div class="select-box__option">
+																<input type="checkbox" class="select-box__radio" id="sort-months-02" name="sort-months">
+																<label for="sort-months-02" class="select-box__label">
+																	<span class="select-box__title">Февраль</span>
+																	<span class="select-box__icon"></span>
+																</label>
+															</div>
+															<div class="select-box__option">
+																<input type="checkbox" class="select-box__radio" id="sort-months-03" name="sort-months">
+																<label for="sort-months-03" class="select-box__label">
+																	<span class="select-box__title">Март</span>
+																	<span class="select-box__icon"></span>
+																</label>
+															</div>
+															<div class="select-box__option">
+																<input type="checkbox" class="select-box__radio" id="sort-months-04" name="sort-months">
+																<label for="sort-months-04" class="select-box__label">
+																	<span class="select-box__title">Апрель</span>
+																	<span class="select-box__icon"></span>
+																</label>
+															</div>
+															<div class="select-box__option">
+																<input type="checkbox" class="select-box__radio" id="sort-months-04" name="sort-months">
+																<label for="sort-months-04" class="select-box__label">
+																	<span class="select-box__title">Май</span>
+																	<span class="select-box__icon"></span>
+																</label>
+															</div>
+															<div class="select-box__option">
+																<input type="checkbox" class="select-box__radio" id="sort-months-04" name="sort-months">
+																<label for="sort-months-04" class="select-box__label">
+																	<span class="select-box__title">Июнь</span>
+																	<span class="select-box__icon"></span>
+																</label>
+															</div>
+															<div class="select-box__option">
+																<input type="checkbox" class="select-box__radio" id="sort-months-04" name="sort-months">
+																<label for="sort-months-04" class="select-box__label">
+																	<span class="select-box__title">Июль</span>
+																	<span class="select-box__icon"></span>
+																</label>
+															</div>
+															<div class="select-box__option">
+																<input type="checkbox" class="select-box__radio" id="sort-months-04" name="sort-months">
+																<label for="sort-months-04" class="select-box__label">
+																	<span class="select-box__title">Август</span>
+																	<span class="select-box__icon"></span>
+																</label>
+															</div>
+															<div class="select-box__option">
+																<input type="checkbox" class="select-box__radio" id="sort-months-04" name="sort-months">
+																<label for="sort-months-04" class="select-box__label">
+																	<span class="select-box__title">Сентябрь</span>
+																	<span class="select-box__icon"></span>
+																</label>
+															</div>
+															<div class="select-box__option">
+																<input type="checkbox" class="select-box__radio" id="sort-months-04" name="sort-months">
+																<label for="sort-months-04" class="select-box__label">
+																	<span class="select-box__title">Октябрь</span>
+																	<span class="select-box__icon"></span>
+																</label>
+															</div>
+															<div class="select-box__option">
+																<input type="checkbox" class="select-box__radio" id="sort-months-04" name="sort-months">
+																<label for="sort-months-04" class="select-box__label">
+																	<span class="select-box__title">Ноябрь</span>
+																	<span class="select-box__icon"></span>
+																</label>
+															</div>
+															<div class="select-box__option">
+																<input type="checkbox" class="select-box__radio" id="sort-months-04" name="sort-months">
+																<label for="sort-months-04" class="select-box__label">
+																	<span class="select-box__title">Декабрь</span>
+																	<span class="select-box__icon"></span>
+																</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="select-box news-filter__select">
+												<div class="select-box__selected">
+													<span class="select-box__placeholder is--active">Вид спорта</span>
+													<span class="select-box__values"></span>
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-caret"></use>
+													</svg>
+												</div>
+												<div class="select-box__container">
+													<div class="select-box__scroll" data-simplebar>
+														<div class="select-box__wrap">
+															<div class="select-box__option">
+																<input type="checkbox" class="select-box__radio" id="sort-type-01" name="sort-type">
+																<label for="sort-type-01" class="select-box__label">
+																	<span class="select-box__title">Футбол</span>
+																	<span class="select-box__icon"></span>
+																</label>
+															</div>
+															<div class="select-box__option">
+																<input type="checkbox" class="select-box__radio" id="sort-years-02" name="sort-type">
+																<label for="sort-type-02" class="select-box__label">
+																	<span class="select-box__title">Волейбол</span>
+																	<span class="select-box__icon"></span>
+																</label>
+															</div>
+															<div class="select-box__option">
+																<input type="checkbox" class="select-box__radio" id="sort-years-03" name="sort-type">
+																<label for="sort-type-03" class="select-box__label">
+																	<span class="select-box__title">Баскетбол</span>
+																	<span class="select-box__icon"></span>
+																</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="news-filter__tags">
+											<div class="btn-checkbox news-filter__tag">
+												<input type="checkbox" class="btn-checkbox__input" id="filter-directions-01">
+												<label for="filter-directions-01" class="btn-checkbox__group">
+													<span class="btn-checkbox__title">#Туризм</span>
+												</label>
+											</div>
+											<div class="btn-checkbox news-filter__tag">
+												<input type="checkbox" class="btn-checkbox__input" id="filter-directions-02">
+												<label for="filter-directions-02" class="btn-checkbox__group">
+													<span class="btn-checkbox__title">#Спорт</span>
+												</label>
+											</div>
+											<div class="btn-checkbox news-filter__tag">
+												<input type="checkbox" class="btn-checkbox__input" id="filter-directions-03">
+												<label for="filter-directions-03" class="btn-checkbox__group">
+													<span class="btn-checkbox__title">#Форум</span>
+												</label>
+											</div>
+											<div class="btn-checkbox news-filter__tag">
+												<input type="checkbox" class="btn-checkbox__input" id="filter-directions-04">
+												<label for="filter-directions-04" class="btn-checkbox__group">
+													<span class="btn-checkbox__title">#Политика</span>
+												</label>
+											</div>
+											<div class="btn-checkbox news-filter__tag">
+												<input type="checkbox" class="btn-checkbox__input" id="filter-directions-05">
+												<label for="filter-directions-05" class="btn-checkbox__group">
+													<span class="btn-checkbox__title">#Другое</span>
+												</label>
+											</div>
+										</div>
+										<button class="news-filter__btn">Применить</button>
+										<button class="news-filter__close" aria-label="Закрыть">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-close"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="news__right">
+							<div class="news__wrapper">
+								<a href="#" class="main-news-card news__item">
+									<picture class="main-news-card__img">
+										<img src="img/main-news-03.jpg" alt="Image">
+									</picture>
+									<div class="main-news-card__body">
+										<div class="main-news-card__group">
+											<span class="main-news-card__date">17 апреля 2025</span>
+											<span class="main-news-card__title">Утвержден новый состав оргкомитета форума «Россия – спортивная держава»</span>
+										</div>
+										<span class="main-news-card__link">Подробнее</span>
+									</div>
+								</a>
+								<a href="#" class="main-news-card news__item">
+									<picture class="main-news-card__img">
+										<img src="img/main-news-03.jpg" alt="Image">
+									</picture>
+									<div class="main-news-card__body">
+										<div class="main-news-card__group">
+											<span class="main-news-card__date">17 апреля 2025</span>
+											<span class="main-news-card__title">Встреча министров спорта стран Диалога по сотрудничеству в Азии пройдет на полях форума «Россия – спортивная держава»</span>
+										</div>
+										<span class="main-news-card__link">Подробнее</span>
+									</div>
+								</a>
+								<a href="#" class="main-news-card news__item">
+									<picture class="main-news-card__img">
+										<img src="img/main-news-03.jpg" alt="Image">
+									</picture>
+									<div class="main-news-card__body">
+										<div class="main-news-card__group">
+											<span class="main-news-card__date">17 апреля 2025</span>
+											<span class="main-news-card__title">Михаил Дегтярев пригласил Министра туризма и спорта Республики Казахстан на форум «Россия – спортивная держава»</span>
+										</div>
+										<span class="main-news-card__link">Подробнее</span>
+									</div>
+								</a>
+								<a href="#" class="main-news-card news__item">
+									<picture class="main-news-card__img">
+										<img src="img/main-news-03.jpg" alt="Image">
+									</picture>
+									<div class="main-news-card__body">
+										<div class="main-news-card__group">
+											<span class="main-news-card__date">17 апреля 2025</span>
+											<span class="main-news-card__title">Утвержден новый состав оргкомитета форума «Россия – спортивная держава»</span>
+										</div>
+										<span class="main-news-card__link">Подробнее</span>
+									</div>
+								</a>
+								<a href="#" class="main-news-card news__item">
+									<picture class="main-news-card__img">
+										<img src="img/main-news-03.jpg" alt="Image">
+									</picture>
+									<div class="main-news-card__body">
+										<div class="main-news-card__group">
+											<span class="main-news-card__date">17 апреля 2025</span>
+											<span class="main-news-card__title">Встреча министров спорта стран Диалога по сотрудничеству в Азии пройдет на полях форума «Россия – спортивная держава»</span>
+										</div>
+										<span class="main-news-card__link">Подробнее</span>
+									</div>
+								</a>
+								<a href="#" class="main-news-card news__item">
+									<picture class="main-news-card__img">
+										<img src="img/main-news-03.jpg" alt="Image">
+									</picture>
+									<div class="main-news-card__body">
+										<div class="main-news-card__group">
+											<span class="main-news-card__date">17 апреля 2025</span>
+											<span class="main-news-card__title">Михаил Дегтярев пригласил Министра туризма и спорта Республики Казахстан на форум «Россия – спортивная держава»</span>
+										</div>
+										<span class="main-news-card__link">Подробнее</span>
+									</div>
+								</a>
+								<a href="#" class="main-news-card news__item">
+									<picture class="main-news-card__img">
+										<img src="img/main-news-03.jpg" alt="Image">
+									</picture>
+									<div class="main-news-card__body">
+										<div class="main-news-card__group">
+											<span class="main-news-card__date">17 апреля 2025</span>
+											<span class="main-news-card__title">Утвержден новый состав оргкомитета форума «Россия – спортивная держава»</span>
+										</div>
+										<span class="main-news-card__link">Подробнее</span>
+									</div>
+								</a>
+								<a href="#" class="main-news-card news__item">
+									<picture class="main-news-card__img">
+										<img src="img/main-news-03.jpg" alt="Image">
+									</picture>
+									<div class="main-news-card__body">
+										<div class="main-news-card__group">
+											<span class="main-news-card__date">17 апреля 2025</span>
+											<span class="main-news-card__title">Встреча министров спорта стран Диалога по сотрудничеству в Азии пройдет на полях форума «Россия – спортивная держава»</span>
+										</div>
+										<span class="main-news-card__link">Подробнее</span>
+									</div>
+								</a>
+								<a href="#" class="main-news-card news__item">
+									<picture class="main-news-card__img">
+										<img src="img/main-news-03.jpg" alt="Image">
+									</picture>
+									<div class="main-news-card__body">
+										<div class="main-news-card__group">
+											<span class="main-news-card__date">17 апреля 2025</span>
+											<span class="main-news-card__title">Михаил Дегтярев пригласил Министра туризма и спорта Республики Казахстан на форум «Россия – спортивная держава»</span>
+										</div>
+										<span class="main-news-card__link">Подробнее</span>
+									</div>
+								</a>
+							</div>
+							<div class="pagination news__pagination">
+								<ul class="pagination__list">
+									<li class="pagination__item is--active">
+										<a href="#" class="pagination__btn">1</a>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__btn">2</a>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__btn">3</a>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__btn">4</a>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__btn is--disabled">...</a>
+									</li>
+									<li class="pagination__item">
+										<a href="#" class="pagination__btn">10</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of news -->
+		</div>
+		<!-- end of content -->
+		<!-- footer -->
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__main">
+					<a href="index.html" class="footer__logotype">
+						<img src="img/logotype-white.svg" width="216" height="89" alt="Россия - спортивная держава">
+					</a>
+					<div class="footer__info">
+						<nav class="nav footer__nav">
+							<ul class="nav__list">
+								<li class="nav__item">
+									<a href="#" class="nav__link">Новости</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">Программа</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">Партнеры</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="c-socnav footer__socnav">
+							<ul class="c-socnav__list">
+								<li class="c-socnav__item">
+									<a href="#" class="c-socnav__link">
+										<svg class="c-socnav__icon">
+											<use xlink:href="img/sprite.svg#icon-square-tg"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="c-socnav__item">
+									<a href="#" class="c-socnav__link">
+										<svg class="c-socnav__icon">
+											<use xlink:href="img/sprite.svg#icon-square-vk"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a href="#" class="footer__link">Правила использования материалов</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Политика конфиденциальности</a>
+						</li>
+					</ul>
+					<div class="footer__block">
+						<p class="footer__copyright">© 2025, Россия-спортивная держава. Все права защищены.</p>
+						<p class="footer__copyright">Разработка сайта: <a href="#" target="_blank">Авилум</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end of footer -->
+	</div>
+	<!-- end of wrapper -->
+	<!-- mobile menu -->
+	<div class="mobile-menu" id="mobile-menu">
+		<div class="mobile-menu__wrap">
+			<nav class="nav mobile-menu__nav">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a href="news.html" class="nav__link">Новости</a>
+					</li>
+					<li class="nav__item">
+						<a href="programs.html" class="nav__link">Программа</a>
+					</li>
+					<li class="nav__item">
+						<a href="partners.html" class="nav__link">Партнеры</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="c-socnav mobile-menu__socnav">
+				<ul class="c-socnav__list">
+					<li class="c-socnav__item">
+						<a href="#" class="c-socnav__link">
+							<svg class="c-socnav__icon">
+								<use xlink:href="img/sprite.svg#icon-square-tg"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="c-socnav__item">
+						<a href="#" class="c-socnav__link">
+							<svg class="c-socnav__icon">
+								<use xlink:href="img/sprite.svg#icon-square-vk"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- end of mobile menu -->
+	<!-- scripts -->
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
