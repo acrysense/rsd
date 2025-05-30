@@ -133,9 +133,168 @@
 								<a href="#" class="tabs__tab">Выставка</a>
 							</li>
 						</ul>
+						<div class="select-box tabs__select">
+							<div class="select-box__selected">
+								<span class="select-box__placeholder is--active">Деловая программа</span>
+								<span class="select-box__values"></span>
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-caret"></use>
+								</svg>
+							</div>
+							<div class="select-box__container">
+								<div class="select-box__scroll" data-simplebar>
+									<div class="select-box__wrap">
+										<a href="programs.html" class="select-box__link is--active">
+											<span class="select-box__link-title">Деловая программа</span>
+											<span class="select-box__link-icon"></span>
+										</a>
+										<a href="programs-sport.html" class="select-box__link">
+											<span class="select-box__link-title">Спортивная программа</span>
+											<span class="select-box__link-icon"></span>
+										</a>
+										<a href="programs.html" class="select-box__link">
+											<span class="select-box__link-title">Выставка</span>
+											<span class="select-box__link-icon"></span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="section-heading">
 						<h2 class="section-heading__title">Деловая программа</h2>
+					</div>
+					<div class="programs-filter programs-sport__filter">
+						<div class="programs-filter__wrap">
+							<div class="programs-filter__dropdown">
+								<div class="programs-filter__selects">
+									<div class="select-box programs-filter__select">
+										<div class="select-box__selected">
+											<span class="select-box__placeholder is--active">20 октября</span>
+											<span class="select-box__values"></span>
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-caret"></use>
+											</svg>
+										</div>
+										<div class="select-box__container">
+											<div class="select-box__scroll" data-simplebar>
+												<div class="select-box__wrap">
+													<div class="select-box__option">
+														<input type="checkbox" class="select-box__radio" id="sort-months-01" name="sort-months">
+														<label for="sort-months-01" class="select-box__label">
+															<span class="select-box__title">20 октября</span>
+															<span class="select-box__icon"></span>
+														</label>
+													</div>
+													<div class="select-box__option">
+														<input type="checkbox" class="select-box__radio" id="sort-months-02" name="sort-months">
+														<label for="sort-months-02" class="select-box__label">
+															<span class="select-box__title">21 октября</span>
+															<span class="select-box__icon"></span>
+														</label>
+													</div>
+													<div class="select-box__option">
+														<input type="checkbox" class="select-box__radio" id="sort-months-03" name="sort-months">
+														<label for="sort-months-03" class="select-box__label">
+															<span class="select-box__title">22 октября</span>
+															<span class="select-box__icon"></span>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="select-box programs-filter__select">
+										<div class="select-box__selected">
+											<span class="select-box__placeholder is--active">Тема мероприятия 1</span>
+											<span class="select-box__values"></span>
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-caret"></use>
+											</svg>
+										</div>
+										<div class="select-box__container">
+											<div class="select-box__scroll" data-simplebar>
+												<div class="select-box__wrap">
+													<div class="select-box__option">
+														<input type="checkbox" class="select-box__radio" id="sort-type-01" name="sort-type" checked>
+														<label for="sort-type-01" class="select-box__label">
+															<span class="select-box__title">Тема мероприятия 1</span>
+															<span class="select-box__icon"></span>
+														</label>
+													</div>
+													<div class="select-box__option">
+														<input type="checkbox" class="select-box__radio" id="sort-years-02" name="sort-type">
+														<label for="sort-type-02" class="select-box__label">
+															<span class="select-box__title">Тема мероприятия 2</span>
+															<span class="select-box__icon"></span>
+														</label>
+													</div>
+													<div class="select-box__option">
+														<input type="checkbox" class="select-box__radio" id="sort-years-03" name="sort-type">
+														<label for="sort-type-03" class="select-box__label">
+															<span class="select-box__title">Тема мероприятия 3</span>
+															<span class="select-box__icon"></span>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="programs-filter__dates">
+								<div class="btn-checkbox btn-checkbox--accent programs-filter__date">
+									<input type="checkbox" class="btn-checkbox__input" id="filter-dates-01" checked>
+									<label for="filter-dates-01" class="btn-checkbox__group">
+										<span class="btn-checkbox__title">20 октября</span>
+									</label>
+								</div>
+								<div class="btn-checkbox btn-checkbox--accent programs-filter__date">
+									<input type="checkbox" class="btn-checkbox__input" id="filter-dates-02">
+									<label for="filter-dates-02" class="btn-checkbox__group">
+										<span class="btn-checkbox__title">21 октября</span>
+									</label>
+								</div>
+								<div class="btn-checkbox btn-checkbox--accent programs-filter__date">
+									<input type="checkbox" class="btn-checkbox__input" id="filter-dates-03">
+									<label for="filter-dates-03" class="btn-checkbox__group">
+										<span class="btn-checkbox__title">22 октября</span>
+									</label>
+								</div>
+							</div>
+							<div class="programs-filter__tags">
+								<div class="btn-checkbox programs-filter__tag">
+									<input type="checkbox" class="btn-checkbox__input" id="filter-directions-01" checked>
+									<label for="filter-directions-01" class="btn-checkbox__group">
+										<span class="btn-checkbox__title">Тема мероприятия 1</span>
+									</label>
+								</div>
+								<div class="btn-checkbox programs-filter__tag">
+									<input type="checkbox" class="btn-checkbox__input" id="filter-directions-02">
+									<label for="filter-directions-02" class="btn-checkbox__group">
+										<span class="btn-checkbox__title">Тема мероприятия 2</span>
+									</label>
+								</div>
+								<div class="btn-checkbox programs-filter__tag">
+									<input type="checkbox" class="btn-checkbox__input" id="filter-directions-03">
+									<label for="filter-directions-03" class="btn-checkbox__group">
+										<span class="btn-checkbox__title">Тема мероприятия 3</span>
+									</label>
+								</div>
+								<div class="btn-checkbox programs-filter__tag">
+									<input type="checkbox" class="btn-checkbox__input" id="filter-directions-04">
+									<label for="filter-directions-04" class="btn-checkbox__group">
+										<span class="btn-checkbox__title">Тема мероприятия 4</span>
+									</label>
+								</div>
+								<div class="btn-checkbox programs-filter__tag">
+									<input type="checkbox" class="btn-checkbox__input" id="filter-directions-05">
+									<label for="filter-directions-05" class="btn-checkbox__group">
+										<span class="btn-checkbox__title">Тема мероприятия 5</span>
+									</label>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="programs__wrapper">
 						<div class="programs-card programs__item" data-time="12:00">

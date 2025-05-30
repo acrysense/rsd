@@ -133,9 +133,60 @@
 								<a href="#" class="tabs__tab">Выставка</a>
 							</li>
 						</ul>
+						<div class="select-box tabs__select">
+							<div class="select-box__selected">
+								<span class="select-box__placeholder is--active">Спортивная программа</span>
+								<span class="select-box__values"></span>
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-caret"></use>
+								</svg>
+							</div>
+							<div class="select-box__container">
+								<div class="select-box__scroll" data-simplebar>
+									<div class="select-box__wrap">
+										<a href="programs.html" class="select-box__link">
+											<span class="select-box__link-title">Деловая программа</span>
+											<span class="select-box__link-icon"></span>
+										</a>
+										<a href="programs-sport.html" class="select-box__link is--active">
+											<span class="select-box__link-title">Спортивная программа</span>
+											<span class="select-box__link-icon"></span>
+										</a>
+										<a href="programs.html" class="select-box__link">
+											<span class="select-box__link-title">Выставка</span>
+											<span class="select-box__link-icon"></span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="section-heading">
 						<h2 class="section-heading__title">Спортивная программа</h2>
+					</div>
+					<div class="programs-filter programs-sport__filter">
+						<div class="programs-filter__wrap">
+							<div class="programs-filter__dates">
+								<div class="btn-checkbox btn-checkbox--accent programs-filter__date">
+									<input type="checkbox" class="btn-checkbox__input" id="filter-dates-01">
+									<label for="filter-dates-01" class="btn-checkbox__group">
+										<span class="btn-checkbox__title">20 октября</span>
+									</label>
+								</div>
+								<div class="btn-checkbox btn-checkbox--accent programs-filter__date">
+									<input type="checkbox" class="btn-checkbox__input" id="filter-dates-02">
+									<label for="filter-dates-02" class="btn-checkbox__group">
+										<span class="btn-checkbox__title">21 октября</span>
+									</label>
+								</div>
+								<div class="btn-checkbox btn-checkbox--accent programs-filter__date">
+									<input type="checkbox" class="btn-checkbox__input" id="filter-dates-03">
+									<label for="filter-dates-03" class="btn-checkbox__group">
+										<span class="btn-checkbox__title">22 октября</span>
+									</label>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="programs-sport__wrapper">
 						<div class="programs-sport-card programs-sport__item">
